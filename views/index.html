@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block content%}
+
+<section id="intro">
+
+    <header>
+        <a href="/">
+            <img src="/logo.png" alt="Imagem da Logomarca"> <!--Alt é uma alternativa-->
+        </a>
+
+    </header>
+
+    <main>
+        <p> 
+            Ficar em casa em período longos, não deve ser nada fácil.
+        </p>            
+        <p> 
+            Por isso, iremos catalogar ideias, <strong>brincadeiras, 
+            jogos, filmes, livros, cursos, dicas e tudo que for necessário </strong>
+            para tornar esse momento mais interessante.
+        </p>               
+        <p>
+            Comece clicando em ver idéias para ver as ideias cadastradas e 
+            contribua adicionando a sua ideia
+        </p>
+    
+
+
+    </main>
+   
+    <section id="buttons">
+        <button onclick="onOff()"> + Adicionar ideia </button>
+        <a href="/ideias" class="button"> Ver Ideias </a>
+    </section>    
+
+    <footer>                
+        Com &#x2764; <a href="https://rocketseat.com.br" target="blank"> Rocketseat </a> e 
+        <a href="https://github.com/rafanp" target="blank">Rafa Neves</a>
+    </footer>
+
+
+    
+</section>
+
+<section id="last-ideias">
+
+    {% include "allideas.html" %}
+
+<!-- Ideias anteriores, sem usar o JS -->           
+<!-- 
+    <div class="idea">
+        <img 
+        src="https://image.flaticon.com/icons/svg/2731/2731308.svg" 
+        alt="Imagem de Curso de Programação">
+
+        <div class="content"> 
+            <h3>Cursos de Programação</h3>
+            <p>Estudo</p>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facere minus aliquid commodi vitae recusandae asperiores nihil assumenda cumque 
+          
+            </div>
+            <a href="#"> Ir para a ideia </a>
+        </div>
+        
+
+    </div>
+-->
+<!--             
+    <div class="idea">
+        <img 
+        src="https://image.flaticon.com/icons/svg/2731/2731297.svg" 
+        alt="Imagem de pessoa lendo">
+
+        <div class="content"> 
+            <h3>Ler bons livros</h3>
+            <p>Estudo</p>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facere minus aliquid commodi vitae recusandae asperiores nihil assumenda cumque 
+
+            </div>
+            <a href="#"> Ir para a ideia </a>
+        </div>            
+    </div>
+
+    <div class="idea">
+        <img 
+        src="https://image.flaticon.com/icons/svg/2731/2731275.svg" 
+        alt="Imagem de controle de videogame">
+
+        <div class="content"> 
+            <h3>Jogar Video-Game</h3>
+            <p>Diversão</p>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facere minus aliquid commodi vitae recusandae asperiores nihil assumenda cumque 
+            </div>
+            <a href="#"> Ir para a ideia </a>
+        </div>      
+-->        </div>    
+
+</section>
+
+{% endblock %}
